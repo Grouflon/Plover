@@ -8,6 +8,8 @@ public enum InkEventType
 {
     setParallaxSpeed,
     playAnimation,
+    autoPassLine,
+    clearAllLines,
     waitForAnimationEnd,
     waitForSeconds,
 }
@@ -55,6 +57,22 @@ public class PlayAnimation_InkEvent : InkEvent
     public float delay;
 }
 
+public class ClearAllLines_InkEvent : InkEvent
+{
+    public ClearAllLines_InkEvent() : base(InkEventType.clearAllLines)
+    {
+    }
+}
+
+public class AutoPassLine_InkEvent : InkEvent
+{
+    public AutoPassLine_InkEvent(float _delay) : base(InkEventType.autoPassLine)
+    {
+        delay = _delay;
+    }
+    public float delay;
+}
+
 public class WaitForAnimationEnd_InkEvent : InkEvent
 {
     public WaitForAnimationEnd_InkEvent() : base(InkEventType.waitForAnimationEnd)
@@ -78,24 +96,37 @@ public struct DelayedAnimation
     public string animationName;
 }
 
+[System.Serializable]
+public struct CharacterDefinition
+{
+    public string name;
+    public Color color;
+    public Transform lineTransform;
+    public AnimationController animation;
+}
+
 public class GameManager : MonoBehaviour
 {
     [Header("Gameplay")]
     public float timeBetweenLines = 0.1f;
+    public List<CharacterDefinition> characters;
 
     [Header("Internal")]
     public TextAsset inkAsset;
     public ParallaxController parallaxController;
-    public AnimationController scene;
-    public AnimationController plover;
     public LineController linePrefab;
-    public Transform ploverLineTransform;
 
     void Start()
     {
+        m_characters = new Dictionary<string, CharacterDefinition>();
+        foreach(var c in characters)
+        {
+            m_characters.Add(c.name, c);
+        }
         m_eventsPile = new List<InkEvent>();
         m_delayedAnimations = new List<DelayedAnimation>();
-        
+        m_currentLines = new Dictionary<string, LineController>();
+
         m_story = new Story(inkAsset.text);
         m_story.BindExternalFunction("setParallaxSpeed", (float _speed) =>
         {
@@ -105,12 +136,22 @@ public class GameManager : MonoBehaviour
         m_story.BindExternalFunction("playAnimation", (string _target, string _animationName) =>
         {
             Debug.Log(string.Format("Ink: playAnimation({0}, {1})", _target, _animationName));
-            pushInkEvent(new PlayAnimation_InkEvent(targetNameToTarget(_target), _animationName));
+            pushInkEvent(new PlayAnimation_InkEvent(targetNameToDefinition(_target).animation, _animationName));
         });
         m_story.BindExternalFunction("playAnimationDelayed", (string _target, string _animationName, float _duration) =>
         {
             Debug.Log(string.Format("Ink: playAnimationDelayed({0}, {1})", _target, _animationName, _duration));
-            pushInkEvent(new PlayAnimation_InkEvent(targetNameToTarget(_target), _animationName, _duration));
+            pushInkEvent(new PlayAnimation_InkEvent(targetNameToDefinition(_target).animation, _animationName, _duration));
+        });
+        m_story.BindExternalFunction("clearAllLines", () =>
+        {
+            Debug.Log(string.Format("Ink: clearAllLines"));
+            pushInkEvent(new ClearAllLines_InkEvent());
+        });
+        m_story.BindExternalFunction("autoPassLine", (float _delay) =>
+        {
+            Debug.Log(string.Format("Ink: autoPassLine({0})", _delay));
+            pushInkEvent(new AutoPassLine_InkEvent(_delay));
         });
         m_story.BindExternalFunction("waitForAnimationEnd", () =>
         {
@@ -144,113 +185,175 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        if (m_isWaitingForInteraction && m_story.canContinue)
+
+        if (m_autoPassNextLineTimer >= 0.0f)
         {
-            if (Input.anyKeyDown)
+            m_autoPassNextLineTimer -= Time.deltaTime;
+            if (m_autoPassNextLineTimer <= 0.0f)
             {
+                m_autoPassNextLineTimer = -1.0f;
                 StartCoroutine(onAdvanceStory());
+            }
+        }
+        else
+        {
+            if (m_isWaitingForInteraction && m_lastDisplayedLine != null)
+            {
+                m_lastDisplayedLine.setBlinkerEnabled(true);
+            }
+
+            if (m_isWaitingForInteraction && m_story.canContinue)
+            {
+                if (Input.anyKeyDown)
+                {
+                    StartCoroutine(onAdvanceStory());
+                }
             }
         }
     }
 
     IEnumerator onAdvanceStory()
     {
+        Assert.IsTrue(m_story.canContinue);
+
         m_isWaitingForInteraction = false;
 
+        if (m_lastDisplayedLine != null)
+        {
+            m_lastDisplayedLine.setBlinkerEnabled(false);
+        }
+
+        string line = m_story.Continue();
+
+        string target = "plover";
+        if (m_story.currentTags.Count > 0)
+        {
+            target = m_story.currentTags[0];
+        }
+
         // Apply all pending delayed animations
-        for (int i = 0; i < m_delayedAnimations.Count;)
+        for (int i = 0; i < m_delayedAnimations.Count; ++i)
         {
             DelayedAnimation delayedAnimation = m_delayedAnimations[i];
             delayedAnimation.target.playAnimation(delayedAnimation.animationName);
         }
         m_delayedAnimations.Clear();
 
-        if (m_currentLine)
+        // Consume clearAllLinesEvents first
+        for (int i = 0; i < m_eventsPile.Count;)
         {
-            yield return StartCoroutine(hideLine());
-        }
-
-        if(m_story.canContinue)
-        {
-            string line = m_story.Continue();
-
-            while (m_eventsPile.Count > 0)
+            if (m_eventsPile[i].type == InkEventType.clearAllLines)
             {
-                InkEvent e = m_eventsPile[0];
-                m_eventsPile.RemoveAt(0);
-
-                switch(e.type)
+                foreach(var pair in m_currentLines)
                 {
-                    case InkEventType.setParallaxSpeed:
-                    {
-                        SetParallaxSpeed_InkEvent evt = (SetParallaxSpeed_InkEvent)e;
-                        parallaxController.speed = evt.speed;
-                    }
-                    break;
-
-                    case InkEventType.playAnimation:
-                    {
-                        PlayAnimation_InkEvent evt = (PlayAnimation_InkEvent)e;
-                        if (evt.delay == 0.0f)
-                        {
-                            evt.target.playAnimation(evt.animationName);
-                        }
-                        else
-                        {
-                            pushDelayedAnimation(evt.target, evt.animationName, evt.delay);
-                        }
-                    }
-                    break;
-
-                    case InkEventType.waitForAnimationEnd:
-                    {
-                        WaitForAnimationEnd_InkEvent evt = (WaitForAnimationEnd_InkEvent)e;
-                        while(scene.isAnimationPlaying())
-                        {
-                            yield return new WaitForEndOfFrame();
-                        }
-                    }
-                    break;
-
-                    case InkEventType.waitForSeconds:
-                    {
-                        WaitForSeconds_InkEvent evt = (WaitForSeconds_InkEvent)e;
-                        yield return new WaitForSeconds(evt.time);
-                    }
-                    break;
+                    pair.Value.hide();
                 }
+                m_currentLines.Clear();
+                m_eventsPile.RemoveAt(i);
+                yield return new WaitForSeconds(timeBetweenLines);
             }
-
-            yield return StartCoroutine(displayLine(line));
-
-            Debug.Log("Turn: " + m_turnCount);
-            ++m_turnCount;
+            else
+            {
+                ++i;
+            }
         }
+
+        yield return StartCoroutine(hideLine(target));
+
+        while (m_eventsPile.Count > 0)
+        {
+            InkEvent e = m_eventsPile[0];
+            m_eventsPile.RemoveAt(0);
+
+            switch(e.type)
+            {
+                case InkEventType.setParallaxSpeed:
+                {
+                    SetParallaxSpeed_InkEvent evt = (SetParallaxSpeed_InkEvent)e;
+                    parallaxController.speed = evt.speed;
+                }
+                break;
+
+                case InkEventType.playAnimation:
+                {
+                    PlayAnimation_InkEvent evt = (PlayAnimation_InkEvent)e;
+                    if (evt.delay == 0.0f)
+                    {
+                        evt.target.playAnimation(evt.animationName);
+                    }
+                    else
+                    {
+                        pushDelayedAnimation(evt.target, evt.animationName, evt.delay);
+                    }
+                }
+                break;
+
+                case InkEventType.autoPassLine:
+                {
+                    AutoPassLine_InkEvent evt = (AutoPassLine_InkEvent)e;
+                    m_autoPassNextLineTimer = evt.delay;
+                }
+                break;
+
+                case InkEventType.waitForAnimationEnd:
+                {
+                    WaitForAnimationEnd_InkEvent evt = (WaitForAnimationEnd_InkEvent)e;
+                    while(targetNameToDefinition("scene").animation.isAnimationPlaying())
+                    {
+                        yield return new WaitForEndOfFrame();
+                    }
+                }
+                break;
+
+                case InkEventType.waitForSeconds:
+                {
+                    WaitForSeconds_InkEvent evt = (WaitForSeconds_InkEvent)e;
+                    yield return new WaitForSeconds(evt.time);
+                }
+                break;
+            }
+        }
+
+        yield return StartCoroutine(displayLine(line, target));
+
+        Debug.Log("Turn: " + m_turnCount);
+        ++m_turnCount;
 
         m_isWaitingForInteraction = true;
 
         yield return null;
     }
 
-    IEnumerator displayLine(string _line)
+    IEnumerator displayLine(string _line, string _target)
     {
-        _line = _line.Replace("<br/>", "\n");
-        // Display Line
-        m_currentLine = GameObject.Instantiate<LineController>(linePrefab, ploverLineTransform);
-        m_currentLine.setText(_line);
-        m_currentLine.show();
+        Assert.IsFalse(m_currentLines.ContainsKey(_target));
 
-        yield return new WaitUntil(() => m_currentLine.getState() == LineDisplayState.Displayed);
+        _line = _line.Replace("<br/>", "\n");
+        CharacterDefinition c = targetNameToDefinition(_target);
+        // Display Line
+        LineController currentLine = GameObject.Instantiate<LineController>(linePrefab, c.lineTransform);
+        currentLine.setText(_line);
+        currentLine.setColor(c.color);
+        currentLine.show();
+        m_currentLines.Add(_target, currentLine);
+        m_lastDisplayedLine = currentLine;
+
+        yield return new WaitUntil(() => currentLine.getState() == LineDisplayState.Displayed);
 
         Debug.Log(_line);
 
         yield return null;
     }
 
-    IEnumerator hideLine()
+    IEnumerator hideLine(string _target)
     {
-        m_currentLine.hide();
-        yield return new WaitForSeconds(timeBetweenLines);
+        if (m_currentLines.ContainsKey(_target))
+        {
+            m_currentLines[_target].hide();
+            m_currentLines.Remove(_target);
+            yield return new WaitForSeconds(timeBetweenLines);
+        }
+        
         yield return null;
     }
 
@@ -268,22 +371,21 @@ public class GameManager : MonoBehaviour
         m_delayedAnimations.Add(delayedAnimation);
     }
 
-    AnimationController targetNameToTarget(string _targetName)
+    CharacterDefinition targetNameToDefinition(string _targetName)
     {
-        switch(_targetName)
-        {
-            case "scene": return scene;
-            case "plover" : return plover;
-            default : return null;
-        }
+        Assert.IsTrue(m_characters.ContainsKey(_targetName));
+        return m_characters[_targetName];
     }
 
     Story m_story;
     int m_turnCount = 0;
 
     bool m_isWaitingForInteraction = false;
+    float m_autoPassNextLineTimer = -1.0f;
 
-    LineController m_currentLine;
+    Dictionary<string, LineController> m_currentLines;
+    LineController m_lastDisplayedLine;
     List<InkEvent> m_eventsPile;
     List<DelayedAnimation> m_delayedAnimations;
+    Dictionary<string, CharacterDefinition> m_characters;
 }

@@ -28,7 +28,7 @@ public class LineController : MonoBehaviour
 
     void Start()
     {
-        blinker.gameObject.SetActive(false);
+        setBlinkerEnabled(false);
     }
 
     void Update()
@@ -109,16 +109,26 @@ public class LineController : MonoBehaviour
     {
         text.SetText(_text);
         text.ForceMeshUpdate();
+    }
 
-        /*float unityLineHeight = text.font.faceInfo.lineHeight * unityLineHeightRatio;
-        Vector3 blinkerPosition = blinker.transform.position;
-        blinkerPosition.y = ((float)text.textInfo.lineCount - 0.5f) * unityLineHeight;
-        blinker.transform.position = blinkerPosition;*/
+    public void setColor(Color _color)
+    {
+        text.color = _color;
+        blinker.setColor(_color);
     }
 
     public LineDisplayState getState()
     {
         return m_state;
+    }
+
+    public void setBlinkerEnabled(bool _enabled)
+    {
+        if (_enabled == blinker.gameObject.activeSelf)
+            return;
+
+        blinker.gameObject.SetActive(_enabled);
+        blinker.resetTime();
     }
 
     public void show()
@@ -152,7 +162,7 @@ public class LineController : MonoBehaviour
 
             case LineDisplayState.Displayed:
             {
-                blinker.gameObject.SetActive(false);
+                setBlinkerEnabled(false);
             }
             break;
 
@@ -163,7 +173,7 @@ public class LineController : MonoBehaviour
             break;
         }
 
-        Debug.Log(string.Format("Line state: {0} -> {1}", m_state, _state));
+        //Debug.Log(string.Format("Line state: {0} -> {1}", m_state, _state));
         m_state = _state;
 
         switch(m_state)
@@ -192,8 +202,6 @@ public class LineController : MonoBehaviour
 
             case LineDisplayState.Displayed:
             {
-                blinker.gameObject.SetActive(true);
-
                 Color c = text.color;
                 c.a = 1.0f;
                 text.color = c;
