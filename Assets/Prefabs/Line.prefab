@@ -215,9 +215,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e35c72ca887f3f24ab4f1073c99b7050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  verticalTravelLength: 0.7
-  enterAnimationLength: 1.2
-  exitAnimationLength: 0.8
+  enterTravelLength: 0.6
+  exitTravelLength: 1.7
+  enterAnimationLength: 0.5
+  exitAnimationLength: 0.9
   text: {fileID: 2112929934648404038}
   blinker: {fileID: 2112929936002353340}
   baseLineOffset: 0.2

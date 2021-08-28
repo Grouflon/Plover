@@ -15,7 +15,8 @@ public enum LineDisplayState
 public class LineController : MonoBehaviour
 {
     [Header("Gameplay")]
-    public float verticalTravelLength = 3.0f;
+    public float enterTravelLength = 0.6f;
+    public float exitTravelLength = 1.5f;
     public float enterAnimationLength = 1.5f;
     public float exitAnimationLength = 1.5f;
 
@@ -57,7 +58,7 @@ public class LineController : MonoBehaviour
                 text.color = c;
 
                 Vector3 sourcePosition = text.rectTransform.localPosition;
-                sourcePosition.y = -verticalTravelLength;
+                sourcePosition.y = -enterTravelLength;
                 Vector3 targetPosition = text.rectTransform.localPosition;
                 targetPosition.y = 0.0f;
                 Vector3 p = Vector3.Lerp(sourcePosition, targetPosition, t);
@@ -90,7 +91,7 @@ public class LineController : MonoBehaviour
                 Vector3 sourcePosition = text.rectTransform.localPosition;
                 sourcePosition.y = 0.0f;
                 Vector3 targetPosition = text.rectTransform.localPosition;
-                targetPosition.y = verticalTravelLength;
+                targetPosition.y = exitTravelLength;
                 Vector3 p = Vector3.Lerp(sourcePosition, targetPosition, t);
                 text.rectTransform.localPosition = p;
 
@@ -182,7 +183,7 @@ public class LineController : MonoBehaviour
                 text.color = c;
 
                 Vector3 p = text.rectTransform.localPosition;
-                p.y = -verticalTravelLength;
+                p.y = -enterTravelLength;
                 text.rectTransform.localPosition = p;
 
                 m_timer = 0.0f;
