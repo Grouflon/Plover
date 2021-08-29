@@ -1,29 +1,37 @@
 EXTERNAL setParallaxSpeed(speed)
+EXTERNAL setDayTime(dayTimeName) // either "day" or "night"
 EXTERNAL playAnimation(target, animationName)
 EXTERNAL playAnimationDelayed(target, animationName, delay)
+EXTERNAL setHorizontalPosition(target, position)
 EXTERNAL clearAllLines()
 EXTERNAL autoPassLine(delay)
-EXTERNAL waitForAnimationEnd()
+EXTERNAL waitForAnimationEnd(target)
 EXTERNAL waitForSeconds(time)
 
+~ setDayTime("day")
 ~ setParallaxSpeed(7)
 
 // Debug
-//-> Debug_SkipIntro
-//-> Debug_BeetleEncounter
+//-> Day1.PastTitle
+//-> Day1.BeetleEncounter
+//-> Day1.EndOfDay
+//-> Night1.AfterTransition
+//-> Night1.EndOfNight
+//-> Day2
 
 // Release start
 -> Day1
 
 === Day1 ===
 ~ playAnimation("scene", "Scene_Intro")
-~ waitForAnimationEnd()
+~ waitForAnimationEnd("scene")
 Press any key or button
 ~ playAnimation("scene", "Scene_Plover_Entry")
-~ waitForAnimationEnd()
--> Day1.Past_Title
+~ waitForAnimationEnd("scene")
+-> Day1.PastTitle
 
-= Past_Title
+= PastTitle
+~ setHorizontalPosition("plover", 2.5)
 ~ playAnimation("plover", "Plover_Run_Fast_B")
 Oh boy oh boy!
 Why am I even doing this?
@@ -47,10 +55,10 @@ The morning dew, like a million diamonds…
 ~ playAnimationDelayed("plover", "Plover_Run", 1.0)
 Wait! Does she even know my name?
 Oh boy….
-~ waitForSeconds(5.0)
+~ waitForSeconds(4.0)
 
 Ok that’s it, I'm bored.
-~ waitForSeconds(3.0)
+~ waitForSeconds(2.0)
 
 Wait.<br/>Is that cloud looking at me? 
 I swear it is!<br/>I’m sure it’s the boys. 
@@ -59,11 +67,14 @@ I swear it is!<br/>I’m sure it’s the boys.
 ~ setParallaxSpeed(7)
 I knew they<br/>wouldn’t take my word!
 ~ waitForSeconds(3.0)
--> Day1.Beetle_Encounter
+-> Day1.BeetleEncounter
 
-= Beetle_Encounter
+= BeetleEncounter
+~ setParallaxSpeed(7)
+~ setHorizontalPosition("plover", 2.5)
+~ playAnimation("plover", "Plover_Run_Fast_B")
 ~ playAnimation("scene", "Scene_Beetle_Entry")
-~ waitForAnimationEnd()
+~ waitForAnimationEnd("scene")
 ~ playAnimation("plover", "Plover_Run")
 ~ waitForSeconds(2.0)
 Hey you!
@@ -117,11 +128,11 @@ All the boys are builts like friggin frigates
 ~ playAnimation("plover", "Plover_Run_Cry")
 I’m like a deflating dinghy
 ~ playAnimation("plover", "Plover_Run_Angry")
-But i’ll prove them all i’m good at something
+But I’ll prove them all I’m good at something
 ~ playAnimation("plover", "Plover_Run")
 I’m no good flyer but I can run!
 Why should it matters anyway
-Noone is flying at the beach! 
+No one is flying at the beach! 
 They’re all running around like headless chicken
 
 ~ clearAllLines()
@@ -164,27 +175,113 @@ Oh! I almost forgot<br/>the most important thing #beetle
 When you see her,<br/>you gotta tell her… #beetle
 
 ~ clearAllLines()
+~ waitForSeconds(1.0)
 -Tell her what?<br/>Damn, he’s too far
 I can’t slow down,<br/>I will lose my pace.
 ~ playAnimation("plover", "Plover_Eye_Top_R")
 What an insightful creature. 
 ~ playAnimation("plover", "Plover_Run_Surprise")
 ~ playAnimationDelayed("plover", "Plover_Run", 1.0)
-Wait?..
+~ waitForSeconds(1.5)
+-> Day1.EndOfDay
+
+= EndOfDay
+~ setHorizontalPosition("plover", 2.5)
+~ playAnimation("plover", "Plover_Run")
+Wait?…
+~ waitForSeconds(1.2)
+-> Night1
+
+=== Night1 ===
+~ clearAllLines()
+~ playAnimation("scene", "Scene_ToNight1")
+~ waitForAnimationEnd("scene")
+-> Night1.AfterTransition
+
+= AfterTransition
+~ setParallaxSpeed(0)
+~ setDayTime("night")
+~ setHorizontalPosition("plover", 2.5)
+~ playAnimation("plover", "Plover_Idle_Long")
+Oh boy what a day!
+~ waitForSeconds(0.5)
+~ playAnimation("plover", "Plover_Idle_Poop")
+~ playAnimationDelayed("plover", "Plover_Idle_Short", 2.0)
+~ waitForSeconds(4.0)
+~ playAnimation("plover", "Plover_Idle_Stargazing")
+I never realized how beautiful night sky can be
+Cool breeze..
+~ playAnimation("plover", "Plover_Idle_Shout_Shy")
+Soothing crickets melody…
+~ clearAllLines()
+~ waitForSeconds(2.0)
+~ playAnimation("plover", "Plover_Idle_Short")
+Thanks pal! #crickets
+~ clearAllLines()
+~ playAnimation("plover", "Plover_Idle_Surprise")
+~ playAnimationDelayed("plover", "Plover_Idle_Short", 0.4)
+What?! 
+~ playAnimation("plover", "Plover_Idle_Stargazing")
+Glimmering stars…
+~ playAnimation("plover", "Plover_Idle_Long")
+~ waitForSeconds(2.5)
+-> EndOfNight
+
+= EndOfNight
+~ setParallaxSpeed(0)
+~ setDayTime("night")
+~ setHorizontalPosition("plover", 2.5)
+~ playAnimation("plover", "Plover_Idle_Romantic")
+I wish she was by my side.
+~ clearAllLines()
+~ playAnimation("plover", "Plover_Idle_Long")
+~ waitForSeconds(2.5)
+~ playAnimation("plover", "Plover_Idle_GoingSleep")
+~ waitForAnimationEnd("plover")
+~ playAnimation("plover", "Plover_Idle_Sleep")
+~ waitForSeconds(1.5)
+~ playAnimation("scene", "Scene_ToDay2")
+~ waitForAnimationEnd("scene")
+-> Day2
+
+=== Day2 ===
+~ setParallaxSpeed(7)
+~ setDayTime("day")
+~ setHorizontalPosition("plover", 2.5)
+~ playAnimation("plover", "Plover_Run")
+Here we go again.
+Second day, out of… Oh dang…
+~ playAnimation("plover", "Plover_Eye_Top_R")
+~ clearAllLines()
+~ waitForSeconds(1.0)
+Why am I doing this again?
+~ clearAllLines()
+~ waitForSeconds(3.0)
+~ playAnimation("plover", "Plover_Run")
+I’m sooo tired! I had the strangest dream
+~ playAnimation("plover", "Plover_Eye_Bot_L")
+I was just a little plover<br/>straight out of the nest
+~ playAnimation("plover", "Plover_Eye_Top_R")
+Out to meet the others for the first time!
+~ playAnimation("plover", "Plover_Eye_Bot_L")
+Except…
+I…
+was wearing…
+~ playAnimation("plover", "Plover_Run_Surprise")
+~ playAnimationDelayed("plover", "Plover_Run", 1.0)
+PANTS!!
+~ playAnimation("plover", "Plover_Run_Cry")
+They were all laughing…
+I tried to run away but I tripped over.
+~ playAnimation("plover", "Plover_Run_Surprise")
+~ playAnimationDelayed("plover", "Plover_Run_Sweaty", 1.0)
+Because I also had SHOES!
+Oh boy.. What a night.. 
+~ playAnimation("plover", "Plover_Run")
 
 -> End
+
 
 === End ===
 TO BE CONTINUED
 -> END
-
-// Debug
-=== Debug_SkipIntro ===
-~ playAnimation("scene", "Scene_Skip_Intro")
-ready?
--> Day1.Past_Title
-
-=== Debug_BeetleEncounter ===
-~ playAnimation("plover", "Plover_Run_Fast_B")
-ready?
--> Day1.Beetle_Encounter

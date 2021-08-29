@@ -7,7 +7,9 @@ using UnityEngine.Assertions;
 public enum InkEventType
 {
     setParallaxSpeed,
+    setDayTime,
     playAnimation,
+    setHorizontalPosition,
     autoPassLine,
     clearAllLines,
     waitForAnimationEnd,
@@ -31,6 +33,15 @@ public class SetParallaxSpeed_InkEvent : InkEvent
         speed = _speed;
     }
     public float speed;
+}
+
+public class SetDayTime_InkEvent : InkEvent
+{
+    public SetDayTime_InkEvent(string _dayTimeName) : base(InkEventType.setDayTime)
+    {
+        dayTimeName = _dayTimeName;
+    }
+    public string dayTimeName;
 }
 
 public class PlayAnimation_InkEvent : InkEvent
@@ -57,6 +68,17 @@ public class PlayAnimation_InkEvent : InkEvent
     public float delay;
 }
 
+public class SetHorizontalPosition_InkEvent : InkEvent
+{
+    public SetHorizontalPosition_InkEvent(string _target, float _position) : base(InkEventType.setHorizontalPosition)
+    {
+        target = _target;
+        position = _position;
+    }
+    public string target;
+    public float position;
+}
+
 public class ClearAllLines_InkEvent : InkEvent
 {
     public ClearAllLines_InkEvent() : base(InkEventType.clearAllLines)
@@ -75,9 +97,11 @@ public class AutoPassLine_InkEvent : InkEvent
 
 public class WaitForAnimationEnd_InkEvent : InkEvent
 {
-    public WaitForAnimationEnd_InkEvent() : base(InkEventType.waitForAnimationEnd)
+    public WaitForAnimationEnd_InkEvent(string _target) : base(InkEventType.waitForAnimationEnd)
     {
+        target = _target;
     }
+    public string target;
 }
 
 public class WaitForSeconds_InkEvent : InkEvent
@@ -115,6 +139,7 @@ public class GameManager : MonoBehaviour
     public TextAsset inkAsset;
     public ParallaxController parallaxController;
     public LineController linePrefab;
+    public DayTimeController dayTimeController;
 
     void Start()
     {
@@ -133,6 +158,11 @@ public class GameManager : MonoBehaviour
             Debug.Log(string.Format("Ink: setParallaxSpeed({0})", _speed));
             pushInkEvent(new SetParallaxSpeed_InkEvent(_speed));
         });
+        m_story.BindExternalFunction("setDayTime", (string _dayTimeName) =>
+        {
+            Debug.Log(string.Format("Ink: setDayTime({0})", _dayTimeName));
+            pushInkEvent(new SetDayTime_InkEvent(_dayTimeName));
+        });
         m_story.BindExternalFunction("playAnimation", (string _target, string _animationName) =>
         {
             Debug.Log(string.Format("Ink: playAnimation({0}, {1})", _target, _animationName));
@@ -142,6 +172,11 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log(string.Format("Ink: playAnimationDelayed({0}, {1})", _target, _animationName, _duration));
             pushInkEvent(new PlayAnimation_InkEvent(targetNameToDefinition(_target).animation, _animationName, _duration));
+        });
+        m_story.BindExternalFunction("setHorizontalPosition", (string _target, float _position) =>
+        {
+            Debug.Log(string.Format("Ink: setHorizontalPosition({0}, {1})", _target, _position));
+            pushInkEvent(new SetHorizontalPosition_InkEvent(_target, _position));
         });
         m_story.BindExternalFunction("clearAllLines", () =>
         {
@@ -153,10 +188,10 @@ public class GameManager : MonoBehaviour
             Debug.Log(string.Format("Ink: autoPassLine({0})", _delay));
             pushInkEvent(new AutoPassLine_InkEvent(_delay));
         });
-        m_story.BindExternalFunction("waitForAnimationEnd", () =>
+        m_story.BindExternalFunction("waitForAnimationEnd", (string _target) =>
         {
-            Debug.Log("Ink: waitForAnimationEnd");
-            pushInkEvent(new WaitForAnimationEnd_InkEvent());
+            Debug.Log(string.Format("Ink: waitForAnimationEnd({0})", _target));
+            pushInkEvent(new WaitForAnimationEnd_InkEvent(_target));
         });
         m_story.BindExternalFunction("waitForSeconds", (float _time) =>
         {
@@ -274,6 +309,13 @@ public class GameManager : MonoBehaviour
                 }
                 break;
 
+                case InkEventType.setDayTime:
+                {
+                    SetDayTime_InkEvent evt = (SetDayTime_InkEvent)e;
+                    dayTimeController.setDayTime(evt.dayTimeName);
+                }
+                break;
+
                 case InkEventType.playAnimation:
                 {
                     PlayAnimation_InkEvent evt = (PlayAnimation_InkEvent)e;
@@ -288,6 +330,19 @@ public class GameManager : MonoBehaviour
                 }
                 break;
 
+                case InkEventType.setHorizontalPosition:
+                {
+                    SetHorizontalPosition_InkEvent evt = (SetHorizontalPosition_InkEvent)e;
+                    CharacterDefinition d = targetNameToDefinition(evt.target);
+                    if (d.animation != null)
+                    {
+                        Vector3 position = d.animation.transform.localPosition;
+                        position.x = evt.position;
+                        d.animation.transform.localPosition = position;
+                    }
+                }
+                break;
+
                 case InkEventType.autoPassLine:
                 {
                     AutoPassLine_InkEvent evt = (AutoPassLine_InkEvent)e;
@@ -298,7 +353,7 @@ public class GameManager : MonoBehaviour
                 case InkEventType.waitForAnimationEnd:
                 {
                     WaitForAnimationEnd_InkEvent evt = (WaitForAnimationEnd_InkEvent)e;
-                    while(targetNameToDefinition("scene").animation.isAnimationPlaying())
+                    while(targetNameToDefinition(evt.target).animation.isAnimationPlaying())
                     {
                         yield return new WaitForEndOfFrame();
                     }

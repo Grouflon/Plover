@@ -1,0 +1,930 @@
+fileFormatVersion: 2
+guid: c13453ff54a24764387424cdcee701be
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4074270333335268333
+    second: Plover_Idle_StarGazing_0
+  - first:
+      213: 3429614929449349735
+    second: Plover_Idle_StarGazing_1
+  - first:
+      213: 1737611614952195683
+    second: Plover_Idle_StarGazing_2
+  - first:
+      213: 1730714657036531825
+    second: Plover_Idle_StarGazing_3
+  - first:
+      213: 7997487977178118833
+    second: Plover_Idle_StarGazing_4
+  - first:
+      213: -383261345127535243
+    second: Plover_Idle_StarGazing_5
+  - first:
+      213: -5524392811565839644
+    second: Plover_Idle_StarGazing_6
+  - first:
+      213: -893525221964486987
+    second: Plover_Idle_StarGazing_7
+  - first:
+      213: -5305051768017904211
+    second: Plover_Idle_StarGazing_8
+  - first:
+      213: -7111855901332589819
+    second: Plover_Idle_StarGazing_9
+  - first:
+      213: -7898995121803529619
+    second: Plover_Idle_StarGazing_10
+  - first:
+      213: 8554510707694862645
+    second: Plover_Idle_StarGazing_11
+  - first:
+      213: -6107361514787011405
+    second: Plover_Idle_StarGazing_12
+  - first:
+      213: -4179746116964456574
+    second: Plover_Idle_StarGazing_13
+  - first:
+      213: 3326556222399940727
+    second: Plover_Idle_StarGazing_14
+  - first:
+      213: 672822597992515520
+    second: Plover_Idle_StarGazing_15
+  - first:
+      213: 4192018895099432311
+    second: Plover_Idle_StarGazing_16
+  - first:
+      213: 5859017152792026879
+    second: Plover_Idle_StarGazing_17
+  - first:
+      213: -1342121366744232714
+    second: Plover_Idle_StarGazing_18
+  - first:
+      213: -1740606087380226724
+    second: Plover_Idle_StarGazing_19
+  - first:
+      213: 2870934427781021428
+    second: Plover_Idle_StarGazing_20
+  - first:
+      213: 7740026238337858393
+    second: Plover_Idle_StarGazing_21
+  - first:
+      213: -2109392297411046205
+    second: Plover_Idle_StarGazing_22
+  - first:
+      213: -172333498693655834
+    second: Plover_Idle_StarGazing_23
+  - first:
+      213: -5121117846878334032
+    second: Plover_Idle_StarGazing_24
+  - first:
+      213: -5210236368577185908
+    second: Plover_Idle_StarGazing_25
+  - first:
+      213: -8234459298729609463
+    second: Plover_Idle_StarGazing_26
+  - first:
+      213: -7836629438109211220
+    second: Plover_Idle_StarGazing_27
+  - first:
+      213: 5528113119266376813
+    second: Plover_Idle_StarGazing_28
+  - first:
+      213: 6231613599075141908
+    second: Plover_Idle_StarGazing_29
+  - first:
+      213: -5692555936604934413
+    second: Plover_Idle_Stargazing_0
+  - first:
+      213: 2446958027174566090
+    second: Plover_Idle_Stargazing_1
+  - first:
+      213: -9060557948251613429
+    second: Plover_Idle_Stargazing_2
+  - first:
+      213: -328708929544705275
+    second: Plover_Idle_Stargazing_3
+  - first:
+      213: 3579077174878688631
+    second: Plover_Idle_Stargazing_4
+  - first:
+      213: 2461197721304684912
+    second: Plover_Idle_Stargazing_5
+  - first:
+      213: -1701409117219397014
+    second: Plover_Idle_Stargazing_6
+  - first:
+      213: -8832468698356343044
+    second: Plover_Idle_Stargazing_7
+  - first:
+      213: -7131065108011119623
+    second: Plover_Idle_Stargazing_8
+  - first:
+      213: 3950269227945910416
+    second: Plover_Idle_Stargazing_9
+  - first:
+      213: -5565167677313382633
+    second: Plover_Idle_Stargazing_10
+  - first:
+      213: 8423331463394362115
+    second: Plover_Idle_Stargazing_11
+  - first:
+      213: 7626660671525399652
+    second: Plover_Idle_Stargazing_12
+  - first:
+      213: -9120464685870575672
+    second: Plover_Idle_Stargazing_13
+  - first:
+      213: 5553338506421955533
+    second: Plover_Idle_Stargazing_14
+  - first:
+      213: -7606977092344427923
+    second: Plover_Idle_Stargazing_15
+  - first:
+      213: -4642683922772666883
+    second: Plover_Idle_Stargazing_16
+  - first:
+      213: -1744894801998459526
+    second: Plover_Idle_Stargazing_17
+  - first:
+      213: 6807968616043579810
+    second: Plover_Idle_Stargazing_18
+  - first:
+      213: 3235932920608138967
+    second: Plover_Idle_Stargazing_19
+  - first:
+      213: 1139341728625449140
+    second: Plover_Idle_Stargazing_20
+  - first:
+      213: -7012982018060952411
+    second: Plover_Idle_Stargazing_21
+  - first:
+      213: 2770385653556506279
+    second: Plover_Idle_Stargazing_22
+  - first:
+      213: 6440439618628819549
+    second: Plover_Idle_Stargazing_23
+  - first:
+      213: -8131825739717445581
+    second: Plover_Idle_Stargazing_24
+  - first:
+      213: -1682935654451421022
+    second: Plover_Idle_Stargazing_25
+  - first:
+      213: 7657374569690339555
+    second: Plover_Idle_Stargazing_26
+  - first:
+      213: -8256822552207858469
+    second: Plover_Idle_Stargazing_27
+  - first:
+      213: 1916109662659591948
+    second: Plover_Idle_Stargazing_28
+  - first:
+      213: -6814750133084412633
+    second: Plover_Idle_Stargazing_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Plover_Idle_Stargazing_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fe2f9e398afff0b0800000000000000
+      internalID: -5692555936604934413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plover_Idle_Stargazing_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac8d7067c5755f120800000000000000
+      internalID: 2446958027174566090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plover_Idle_Stargazing_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b07de9b0d8e624280800000000000000
+      internalID: -9060557948251613429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plover_Idle_Stargazing_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b2dfb58f0307bf0800000000000000
+      internalID: -328708929544705275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plover_Idle_Stargazing_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7755a505abf6ba130800000000000000
+      internalID: 3579077174878688631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plover_Idle_Stargazing_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 079dd5c994ee72220800000000000000
+      internalID: 2461197721304684912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plover_Idle_Stargazing_6
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a62e68e1c616368e0800000000000000
+      internalID: -1701409117219397014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plover_Idle_Stargazing_7
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe96b8e384cc6580800000000000000
+      internalID: -8832468698356343044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plover_Idle_Stargazing_8
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb80d6f01e590d90800000000000000
+      internalID: -7131065108011119623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plover_Idle_Stargazing_9
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0906fd2feec22d630800000000000000
+      internalID: 3950269227945910416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plover_Idle_Stargazing_10
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7170046ab7d84c2b0800000000000000
+      internalID: -5565167677313382633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plover_Idle_Stargazing_11
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3030ef4565fa5e470800000000000000
+      internalID: 8423331463394362115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plover_Idle_Stargazing_12
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46ca6b4197757d960800000000000000
+      internalID: 7626660671525399652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plover_Idle_Stargazing_13
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cf8034c0b99d6180800000000000000
+      internalID: -9120464685870575672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plover_Idle_Stargazing_14
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcb67c0e2fb611d40800000000000000
+      internalID: 5553338506421955533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plover_Idle_Stargazing_15
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ac64453a69e6690800000000000000
+      internalID: -7606977092344427923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plover_Idle_Stargazing_16
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df5d7baf19fd19fb0800000000000000
+      internalID: -4642683922772666883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plover_Idle_Stargazing_17
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7dc4742c63e8c7e0800000000000000
+      internalID: -1744894801998459526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plover_Idle_Stargazing_18
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a90949d263ca7e50800000000000000
+      internalID: 6807968616043579810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plover_Idle_Stargazing_19
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d627d9b8d758ec20800000000000000
+      internalID: 3235932920608138967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plover_Idle_Stargazing_20
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b8df740441cfcf00800000000000000
+      internalID: 1139341728625449140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plover_Idle_Stargazing_21
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ac564dc202ecae90800000000000000
+      internalID: -7012982018060952411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plover_Idle_Stargazing_22
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aee213e213627620800000000000000
+      internalID: 2770385653556506279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plover_Idle_Stargazing_23
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a19b1d5b9016950800000000000000
+      internalID: 6440439618628819549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plover_Idle_Stargazing_24
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33873c0f293f52f80800000000000000
+      internalID: -8131825739717445581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plover_Idle_Stargazing_25
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a0659850f205a8e0800000000000000
+      internalID: -1682935654451421022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plover_Idle_Stargazing_26
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e89082c995744a60800000000000000
+      internalID: 7657374569690339555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plover_Idle_Stargazing_27
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd46732a2afd96d80800000000000000
+      internalID: -8256822552207858469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plover_Idle_Stargazing_28
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0fb4811693679a10800000000000000
+      internalID: 1916109662659591948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plover_Idle_Stargazing_29
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 725257c2cd42d61a0800000000000000
+      internalID: -6814750133084412633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

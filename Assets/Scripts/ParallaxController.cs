@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class ParallaxController : MonoBehaviour
 {
-    public float speed = 1.0f;
+    public float speed
+    {
+        get { return m_speed; }
+        set
+        {
+            m_speed = value;
+        }
+    }
     public List<ParallaxLayer> layers;
 
     // Start is called before the first frame update
@@ -16,7 +23,7 @@ public class ParallaxController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        m_distanceTravelled += -speed * Time.deltaTime;
+        m_distanceTravelled += -m_speed * Time.deltaTime;
         foreach (ParallaxLayer layer in layers)        
         {
             layer.position = m_distanceTravelled;
@@ -24,4 +31,5 @@ public class ParallaxController : MonoBehaviour
     }
 
     float m_distanceTravelled = 0.0f;
+    float m_speed = 0.0f;
 }
