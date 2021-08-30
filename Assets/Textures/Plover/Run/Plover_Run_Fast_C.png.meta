@@ -1,91 +1,61 @@
 fileFormatVersion: 2
-guid: 876392152a8067c429231f8fb9893027
+guid: 9c8505ccc554aa244bfcdb8c0c6c8c95
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6615323070152017607
-    second: Plover_Idle_Poop_0
+      213: -6487684931537601486
+    second: Plover_Run_Fast_C_0
   - first:
-      213: -4064510162572799285
-    second: Plover_Idle_Poop_1
+      213: -3241042685019864746
+    second: Plover_Run_Fast_C_1
   - first:
-      213: -5626945053479552596
-    second: Plover_Idle_Poop_2
+      213: -1401249160237304435
+    second: Plover_Run_Fast_C_2
   - first:
-      213: -6876380370254212450
-    second: Plover_Idle_Poop_3
+      213: 4831558876937684986
+    second: Plover_Run_Fast_C_3
   - first:
-      213: -7198692528340979090
-    second: Plover_Idle_Poop_4
+      213: -948485650558533235
+    second: Plover_Run_Fast_C_4
   - first:
-      213: 289763659923174217
-    second: Plover_Idle_Poop_5
+      213: 8501291496746051715
+    second: Plover_Run_Fast_C_5
   - first:
-      213: -7035956656058172465
-    second: Plover_Idle_Poop_6
+      213: 8955105425326033674
+    second: Plover_Run_Fast_C_6
   - first:
-      213: -6634306242060421531
-    second: Plover_Idle_Poop_7
+      213: 3326918581458686826
+    second: Plover_Run_Fast_C_7
   - first:
-      213: -3057156080243341790
-    second: Plover_Idle_Poop_8
+      213: -6941835441549987784
+    second: Plover_Run_Fast_C_8
   - first:
-      213: -7072294077731894148
-    second: Plover_Idle_Poop_9
+      213: 9100226904213452728
+    second: Plover_Run_Fast_C_9
   - first:
-      213: 1074794582883426585
-    second: Plover_Idle_Poop_10
+      213: -8578764787555943505
+    second: Plover_Run_Fast_C_10
   - first:
-      213: -1369776313545375983
-    second: Plover_Idle_Poop_11
+      213: -8397399047105966586
+    second: Plover_Run_Fast_C_11
   - first:
-      213: 7779861764535906463
-    second: Plover_Idle_Poop_12
+      213: -184194575619234575
+    second: Plover_Run_Fast_C_12
   - first:
-      213: 2153930914214573376
-    second: Plover_Idle_Poop_13
+      213: 8238277801675335557
+    second: Plover_Run_Fast_C_13
   - first:
-      213: -7912845490055607300
-    second: Plover_Idle_Poop_14
+      213: 831524307457691602
+    second: Plover_Run_Fast_C_14
   - first:
-      213: -1480312824771252461
-    second: Plover_Idle_Poop_15
+      213: -5632985781771029478
+    second: Plover_Run_Fast_C_15
   - first:
-      213: 8388147475105079009
-    second: Plover_Idle_Poop_16
+      213: -2422947642293770215
+    second: Plover_Run_Fast_C_16
   - first:
-      213: 2615762806638254379
-    second: Plover_Idle_Poop_17
-  - first:
-      213: 965818386749403641
-    second: Plover_Idle_Poop_18
-  - first:
-      213: -4884477987806836067
-    second: Plover_Idle_Poop_19
-  - first:
-      213: -707450983080034372
-    second: Plover_Idle_Poop_20
-  - first:
-      213: 6218374537629292946
-    second: Plover_Idle_Poop_21
-  - first:
-      213: -1610975925294003157
-    second: Plover_Idle_Poop_22
-  - first:
-      213: 4658868940725797686
-    second: Plover_Idle_Poop_23
-  - first:
-      213: 899845368073192995
-    second: Plover_Idle_Poop_24
-  - first:
-      213: -1120533601998715686
-    second: Plover_Idle_Poop_25
-  - first:
-      213: 4782225248259347894
-    second: Plover_Idle_Poop_26
-  - first:
-      213: -7997946971193318016
-    second: Plover_Idle_Poop_27
+      213: -1406835337030937443
+    second: Plover_Run_Fast_C_17
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -187,7 +157,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Plover_Idle_Poop_0
+      name: Plover_Run_Fast_C_0
       rect:
         serializedVersion: 2
         x: 0
@@ -201,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 939742997b6a134a0800000000000000
-      internalID: -6615323070152017607
+      spriteID: 23cfb019dec17f5a0800000000000000
+      internalID: -6487684931537601486
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plover_Idle_Poop_1
+      name: Plover_Run_Fast_C_1
       rect:
         serializedVersion: 2
         x: 48
@@ -222,14 +192,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc212e5ba85f797c0800000000000000
-      internalID: -4064510162572799285
+      spriteID: 651438989d08503d0800000000000000
+      internalID: -3241042685019864746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plover_Idle_Poop_2
+      name: Plover_Run_Fast_C_2
       rect:
         serializedVersion: 2
         x: 96
@@ -243,14 +213,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca9b5b4694319e1b0800000000000000
-      internalID: -5626945053479552596
+      spriteID: d85bd3a1053cd8ce0800000000000000
+      internalID: -1401249160237304435
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plover_Idle_Poop_3
+      name: Plover_Run_Fast_C_3
       rect:
         serializedVersion: 2
         x: 144
@@ -264,14 +234,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9257826c703290a0800000000000000
-      internalID: -6876380370254212450
+      spriteID: af7814b23352d0340800000000000000
+      internalID: 4831558876937684986
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plover_Idle_Poop_4
+      name: Plover_Run_Fast_C_4
       rect:
         serializedVersion: 2
         x: 192
@@ -285,14 +255,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e623af8294b191c90800000000000000
-      internalID: -7198692528340979090
+      spriteID: d8147eb735d46d2f0800000000000000
+      internalID: -948485650558533235
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plover_Idle_Poop_5
+      name: Plover_Run_Fast_C_5
       rect:
         serializedVersion: 2
         x: 240
@@ -306,14 +276,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 943b9827382750400800000000000000
-      internalID: 289763659923174217
+      spriteID: 388e8931397aaf570800000000000000
+      internalID: 8501291496746051715
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plover_Idle_Poop_6
+      name: Plover_Run_Fast_C_6
       rect:
         serializedVersion: 2
         x: 288
@@ -327,14 +297,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcb7b9c03b24b5e90800000000000000
-      internalID: -7035956656058172465
+      spriteID: a0b4bba20fce64c70800000000000000
+      internalID: 8955105425326033674
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plover_Idle_Poop_7
+      name: Plover_Run_Fast_C_7
       rect:
         serializedVersion: 2
         x: 336
@@ -348,14 +318,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 566f4d67f953ee3a0800000000000000
-      internalID: -6634306242060421531
+      spriteID: a63dd74b2d69b2e20800000000000000
+      internalID: 3326918581458686826
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plover_Idle_Poop_8
+      name: Plover_Run_Fast_C_8
       rect:
         serializedVersion: 2
         x: 384
@@ -369,14 +339,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2268b261ebcc295d0800000000000000
-      internalID: -3057156080243341790
+      spriteID: 83032310275a9af90800000000000000
+      internalID: -6941835441549987784
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plover_Idle_Poop_9
+      name: Plover_Run_Fast_C_9
       rect:
         serializedVersion: 2
         x: 432
@@ -390,14 +360,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7c01b5c10a2add90800000000000000
-      internalID: -7072294077731894148
+      spriteID: 8b7781187208a4e70800000000000000
+      internalID: 9100226904213452728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plover_Idle_Poop_10
+      name: Plover_Run_Fast_C_10
       rect:
         serializedVersion: 2
         x: 480
@@ -411,14 +381,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 911e7478aff6aee00800000000000000
-      internalID: 1074794582883426585
+      spriteID: fab3912c0ea12f880800000000000000
+      internalID: -8578764787555943505
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plover_Idle_Poop_11
+      name: Plover_Run_Fast_C_11
       rect:
         serializedVersion: 2
         x: 528
@@ -432,14 +402,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11f326143b39dfce0800000000000000
-      internalID: -1369776313545375983
+      spriteID: 60e8b08de02767b80800000000000000
+      internalID: -8397399047105966586
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plover_Idle_Poop_12
+      name: Plover_Run_Fast_C_12
       rect:
         serializedVersion: 2
         x: 576
@@ -453,14 +423,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f907ecc2e0f97fb60800000000000000
-      internalID: 7779861764535906463
+      spriteID: 1f469a6620c917df0800000000000000
+      internalID: -184194575619234575
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plover_Idle_Poop_13
+      name: Plover_Run_Fast_C_13
       rect:
         serializedVersion: 2
         x: 624
@@ -474,14 +444,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 045fd7421cc44ed10800000000000000
-      internalID: 2153930914214573376
+      spriteID: 58728d9230e345270800000000000000
+      internalID: 8238277801675335557
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plover_Idle_Poop_14
+      name: Plover_Run_Fast_C_14
       rect:
         serializedVersion: 2
         x: 672
@@ -495,14 +465,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfb0faa63fcef2290800000000000000
-      internalID: -7912845490055607300
+      spriteID: 2df4e18b3fa2a8b00800000000000000
+      internalID: 831524307457691602
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plover_Idle_Poop_15
+      name: Plover_Run_Fast_C_15
       rect:
         serializedVersion: 2
         x: 720
@@ -516,14 +486,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31fed03345fd47be0800000000000000
-      internalID: -1480312824771252461
+      spriteID: a1436bcb64d93d1b0800000000000000
+      internalID: -5632985781771029478
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plover_Idle_Poop_16
+      name: Plover_Run_Fast_C_16
       rect:
         serializedVersion: 2
         x: 768
@@ -537,14 +507,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ee5a31bfafa86470800000000000000
-      internalID: 8388147475105079009
+      spriteID: 918a5b7e4f5ff5ed0800000000000000
+      internalID: -2422947642293770215
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plover_Idle_Poop_17
+      name: Plover_Run_Fast_C_17
       rect:
         serializedVersion: 2
         x: 816
@@ -558,218 +528,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b291a5ae96e0d4420800000000000000
-      internalID: 2615762806638254379
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Plover_Idle_Poop_18
-      rect:
-        serializedVersion: 2
-        x: 864
-        y: 0
-        width: 48
-        height: 48
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9f13db3a4b6476d00800000000000000
-      internalID: 965818386749403641
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Plover_Idle_Poop_19
-      rect:
-        serializedVersion: 2
-        x: 912
-        y: 0
-        width: 48
-        height: 48
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d9a0f8f2629d63cb0800000000000000
-      internalID: -4884477987806836067
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Plover_Idle_Poop_20
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 0
-        width: 48
-        height: 48
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cbf73814411ae26f0800000000000000
-      internalID: -707450983080034372
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Plover_Idle_Poop_21
-      rect:
-        serializedVersion: 2
-        x: 1008
-        y: 0
-        width: 48
-        height: 48
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2995ab312ba1c4650800000000000000
-      internalID: 6218374537629292946
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Plover_Idle_Poop_22
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 0
-        width: 48
-        height: 48
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b2c05276ee9a4a9e0800000000000000
-      internalID: -1610975925294003157
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Plover_Idle_Poop_23
-      rect:
-        serializedVersion: 2
-        x: 1104
-        y: 0
-        width: 48
-        height: 48
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 633cf0b2e90a7a040800000000000000
-      internalID: 4658868940725797686
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Plover_Idle_Poop_24
-      rect:
-        serializedVersion: 2
-        x: 1152
-        y: 0
-        width: 48
-        height: 48
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 32688cc3894ec7c00800000000000000
-      internalID: 899845368073192995
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Plover_Idle_Poop_25
-      rect:
-        serializedVersion: 2
-        x: 1200
-        y: 0
-        width: 48
-        height: 48
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad44af530a01370f0800000000000000
-      internalID: -1120533601998715686
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Plover_Idle_Poop_26
-      rect:
-        serializedVersion: 2
-        x: 1248
-        y: 0
-        width: 48
-        height: 48
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6b51766a680ed5240800000000000000
-      internalID: 4782225248259347894
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Plover_Idle_Poop_27
-      rect:
-        serializedVersion: 2
-        x: 1296
-        y: 0
-        width: 48
-        height: 48
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0856c99ca95910190800000000000000
-      internalID: -7997946971193318016
+      spriteID: d94ddc6f6bae97ce0800000000000000
+      internalID: -1406835337030937443
       vertices: []
       indices: 
       edges: []
