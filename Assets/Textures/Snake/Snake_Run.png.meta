@@ -200,10 +200,10 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 864
         width: 160
         height: 160
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -221,10 +221,10 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 0
+        y: 864
         width: 160
         height: 160
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -242,10 +242,10 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 0
+        y: 864
         width: 160
         height: 160
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -263,10 +263,10 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 480
-        y: 0
+        y: 864
         width: 160
         height: 160
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -284,10 +284,10 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 640
-        y: 0
+        y: 864
         width: 160
         height: 160
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -305,10 +305,10 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 800
-        y: 0
+        y: 864
         width: 160
         height: 160
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -325,11 +325,11 @@ TextureImporter:
       name: Snake_Run_6
       rect:
         serializedVersion: 2
-        x: 960
-        y: 0
+        x: 0
+        y: 704
         width: 160
         height: 160
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -346,11 +346,11 @@ TextureImporter:
       name: Snake_Run_7
       rect:
         serializedVersion: 2
-        x: 1120
-        y: 0
+        x: 160
+        y: 704
         width: 160
         height: 160
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -367,11 +367,11 @@ TextureImporter:
       name: Snake_Run_8
       rect:
         serializedVersion: 2
-        x: 1280
-        y: 0
+        x: 320
+        y: 704
         width: 160
         height: 160
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -388,11 +388,11 @@ TextureImporter:
       name: Snake_Run_9
       rect:
         serializedVersion: 2
-        x: 1440
-        y: 0
+        x: 480
+        y: 704
         width: 160
         height: 160
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -409,11 +409,11 @@ TextureImporter:
       name: Snake_Run_10
       rect:
         serializedVersion: 2
-        x: 1600
-        y: 0
+        x: 640
+        y: 704
         width: 160
         height: 160
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -430,11 +430,11 @@ TextureImporter:
       name: Snake_Run_11
       rect:
         serializedVersion: 2
-        x: 1760
-        y: 0
+        x: 800
+        y: 704
         width: 160
         height: 160
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -451,11 +451,11 @@ TextureImporter:
       name: Snake_Run_12
       rect:
         serializedVersion: 2
-        x: 1920
-        y: 0
+        x: 0
+        y: 544
         width: 160
         height: 160
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -472,11 +472,11 @@ TextureImporter:
       name: Snake_Run_13
       rect:
         serializedVersion: 2
-        x: 2080
-        y: 0
+        x: 160
+        y: 544
         width: 160
         height: 160
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -493,11 +493,11 @@ TextureImporter:
       name: Snake_Run_14
       rect:
         serializedVersion: 2
-        x: 2240
-        y: 0
+        x: 320
+        y: 544
         width: 160
         height: 160
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -514,11 +514,11 @@ TextureImporter:
       name: Snake_Run_15
       rect:
         serializedVersion: 2
-        x: 2400
-        y: 0
+        x: 480
+        y: 544
         width: 160
         height: 160
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -535,11 +535,11 @@ TextureImporter:
       name: Snake_Run_16
       rect:
         serializedVersion: 2
-        x: 2560
-        y: 0
+        x: 640
+        y: 544
         width: 160
         height: 160
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -556,11 +556,11 @@ TextureImporter:
       name: Snake_Run_17
       rect:
         serializedVersion: 2
-        x: 2720
-        y: 0
+        x: 800
+        y: 544
         width: 160
         height: 160
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -577,11 +577,11 @@ TextureImporter:
       name: Snake_Run_18
       rect:
         serializedVersion: 2
-        x: 2880
-        y: 0
+        x: 0
+        y: 384
         width: 160
         height: 160
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -598,11 +598,11 @@ TextureImporter:
       name: Snake_Run_19
       rect:
         serializedVersion: 2
-        x: 3040
-        y: 0
+        x: 160
+        y: 384
         width: 160
         height: 160
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []

@@ -161,10 +161,10 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 208
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -182,10 +182,10 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 0
+        y: 208
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -203,10 +203,10 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 0
+        y: 208
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -224,10 +224,10 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 144
-        y: 0
+        y: 208
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -245,10 +245,10 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 0
+        y: 208
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -265,11 +265,11 @@ TextureImporter:
       name: Plover_Run_Eye_Top_R_5
       rect:
         serializedVersion: 2
-        x: 240
-        y: 0
+        x: 0
+        y: 160
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -286,11 +286,11 @@ TextureImporter:
       name: Plover_Run_Eye_Top_R_6
       rect:
         serializedVersion: 2
-        x: 288
-        y: 0
+        x: 48
+        y: 160
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -307,11 +307,11 @@ TextureImporter:
       name: Plover_Run_Eye_Top_R_7
       rect:
         serializedVersion: 2
-        x: 336
-        y: 0
+        x: 96
+        y: 160
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -328,11 +328,11 @@ TextureImporter:
       name: Plover_Run_Eye_Top_R_8
       rect:
         serializedVersion: 2
-        x: 384
-        y: 0
+        x: 144
+        y: 160
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -349,11 +349,11 @@ TextureImporter:
       name: Plover_Run_Eye_Top_R_9
       rect:
         serializedVersion: 2
-        x: 432
-        y: 0
+        x: 192
+        y: 160
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -370,11 +370,11 @@ TextureImporter:
       name: Plover_Run_Eye_Top_R_10
       rect:
         serializedVersion: 2
-        x: 480
-        y: 0
+        x: 0
+        y: 112
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -391,11 +391,11 @@ TextureImporter:
       name: Plover_Run_Eye_Top_R_11
       rect:
         serializedVersion: 2
-        x: 528
-        y: 0
+        x: 48
+        y: 112
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -412,11 +412,11 @@ TextureImporter:
       name: Plover_Run_Eye_Top_R_12
       rect:
         serializedVersion: 2
-        x: 576
-        y: 0
+        x: 96
+        y: 112
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -433,11 +433,11 @@ TextureImporter:
       name: Plover_Run_Eye_Top_R_13
       rect:
         serializedVersion: 2
-        x: 624
-        y: 0
+        x: 144
+        y: 112
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -454,11 +454,11 @@ TextureImporter:
       name: Plover_Run_Eye_Top_R_14
       rect:
         serializedVersion: 2
-        x: 672
-        y: 0
+        x: 192
+        y: 112
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -475,11 +475,11 @@ TextureImporter:
       name: Plover_Run_Eye_Top_R_15
       rect:
         serializedVersion: 2
-        x: 720
-        y: 0
+        x: 0
+        y: 64
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -496,11 +496,11 @@ TextureImporter:
       name: Plover_Run_Eye_Top_R_16
       rect:
         serializedVersion: 2
-        x: 768
-        y: 0
+        x: 48
+        y: 64
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -517,11 +517,11 @@ TextureImporter:
       name: Plover_Run_Eye_Top_R_17
       rect:
         serializedVersion: 2
-        x: 816
-        y: 0
+        x: 96
+        y: 64
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []

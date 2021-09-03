@@ -191,10 +191,10 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 208
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -212,10 +212,10 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 0
+        y: 208
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -233,10 +233,10 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 0
+        y: 208
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -254,10 +254,10 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 144
-        y: 0
+        y: 208
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -275,10 +275,10 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 0
+        y: 208
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -296,10 +296,10 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 240
-        y: 0
+        y: 208
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -317,10 +317,10 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 0
+        y: 208
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -338,10 +338,10 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 336
-        y: 0
+        y: 208
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -359,10 +359,10 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 0
+        y: 208
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -380,10 +380,10 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 432
-        y: 0
+        y: 208
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -400,11 +400,11 @@ TextureImporter:
       name: Plover_Idle_Poop_10
       rect:
         serializedVersion: 2
-        x: 480
-        y: 0
+        x: 0
+        y: 160
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -421,11 +421,11 @@ TextureImporter:
       name: Plover_Idle_Poop_11
       rect:
         serializedVersion: 2
-        x: 528
-        y: 0
+        x: 48
+        y: 160
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -442,11 +442,11 @@ TextureImporter:
       name: Plover_Idle_Poop_12
       rect:
         serializedVersion: 2
-        x: 576
-        y: 0
+        x: 96
+        y: 160
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -463,11 +463,11 @@ TextureImporter:
       name: Plover_Idle_Poop_13
       rect:
         serializedVersion: 2
-        x: 624
-        y: 0
+        x: 144
+        y: 160
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -484,11 +484,11 @@ TextureImporter:
       name: Plover_Idle_Poop_14
       rect:
         serializedVersion: 2
-        x: 672
-        y: 0
+        x: 192
+        y: 160
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -505,11 +505,11 @@ TextureImporter:
       name: Plover_Idle_Poop_15
       rect:
         serializedVersion: 2
-        x: 720
-        y: 0
+        x: 240
+        y: 160
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -526,11 +526,11 @@ TextureImporter:
       name: Plover_Idle_Poop_16
       rect:
         serializedVersion: 2
-        x: 768
-        y: 0
+        x: 288
+        y: 160
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -547,11 +547,11 @@ TextureImporter:
       name: Plover_Idle_Poop_17
       rect:
         serializedVersion: 2
-        x: 816
-        y: 0
+        x: 336
+        y: 160
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -568,11 +568,11 @@ TextureImporter:
       name: Plover_Idle_Poop_18
       rect:
         serializedVersion: 2
-        x: 864
-        y: 0
+        x: 384
+        y: 160
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -589,11 +589,11 @@ TextureImporter:
       name: Plover_Idle_Poop_19
       rect:
         serializedVersion: 2
-        x: 912
-        y: 0
+        x: 432
+        y: 160
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -610,11 +610,11 @@ TextureImporter:
       name: Plover_Idle_Poop_20
       rect:
         serializedVersion: 2
-        x: 960
-        y: 0
+        x: 0
+        y: 112
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -631,11 +631,11 @@ TextureImporter:
       name: Plover_Idle_Poop_21
       rect:
         serializedVersion: 2
-        x: 1008
-        y: 0
+        x: 48
+        y: 112
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -652,11 +652,11 @@ TextureImporter:
       name: Plover_Idle_Poop_22
       rect:
         serializedVersion: 2
-        x: 1056
-        y: 0
+        x: 96
+        y: 112
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -673,11 +673,11 @@ TextureImporter:
       name: Plover_Idle_Poop_23
       rect:
         serializedVersion: 2
-        x: 1104
-        y: 0
+        x: 144
+        y: 112
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -694,11 +694,11 @@ TextureImporter:
       name: Plover_Idle_Poop_24
       rect:
         serializedVersion: 2
-        x: 1152
-        y: 0
+        x: 192
+        y: 112
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -715,11 +715,11 @@ TextureImporter:
       name: Plover_Idle_Poop_25
       rect:
         serializedVersion: 2
-        x: 1200
-        y: 0
+        x: 240
+        y: 112
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -736,11 +736,11 @@ TextureImporter:
       name: Plover_Idle_Poop_26
       rect:
         serializedVersion: 2
-        x: 1248
-        y: 0
+        x: 288
+        y: 112
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -757,11 +757,11 @@ TextureImporter:
       name: Plover_Idle_Poop_27
       rect:
         serializedVersion: 2
-        x: 1296
-        y: 0
+        x: 336
+        y: 112
         width: 48
         height: 48
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
