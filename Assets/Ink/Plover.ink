@@ -23,6 +23,7 @@ EXTERNAL waitForSeconds(time)
 //-> Day2.AfterEncounter
 //-> Night2
 //-> Night2.EndOfNight
+//-> Day3
 
 // Release start
 -> Day1
@@ -466,7 +467,8 @@ My head hurts
 ~ setDayTime("night")
 ~ setHorizontalPosition("plover", 2.5)
 ~ playAnimation("plover", "Plover_Idle_Short")
-And I’m hungry now 
+And I’m hungry now
+~ clearAllLines()
 ~ waitForSeconds(2.0)
 ~ playAnimation("plover", "Plover_Idle_Poop")
 ~ waitForAnimationEnd("plover")
@@ -483,5 +485,12 @@ And I’m hungry now
 
 
 === End ===
-TO BE CONTINUED
+~ playAnimation("scene", "Scene_EndTitle")
+~ waitForAnimationEnd("scene")
+~ waitForSeconds(2.0)
+This game was made for AGBIC 2021 by<br/>Rémi Bismuth and Nicolas Millot #end
+~ waitForSeconds(0.5)
+Thank you for playing #end
+~ clearAllLines()
+~ playAnimation("scene", "Scene_FadeAndRestart")
 -> END

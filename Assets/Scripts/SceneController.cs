@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
@@ -15,5 +16,10 @@ public class SceneController : MonoBehaviour
     public void setParallaxSpeed(float _speed)
     {
         parallaxController.speed = _speed;
+    }
+
+    public void restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

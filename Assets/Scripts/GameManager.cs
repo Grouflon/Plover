@@ -126,6 +126,7 @@ public struct CharacterDefinition
     public string name;
     public Color color;
     public Transform lineTransform;
+    public LineController linePrefabVariant;
     public AnimationController animation;
 }
 
@@ -385,8 +386,12 @@ public class GameManager : MonoBehaviour
 
         _line = _line.Replace("<br/>", "\n");
         CharacterDefinition c = targetNameToDefinition(_target);
+        LineController prefab = c.linePrefabVariant;
+        if (prefab == null)
+            prefab = linePrefab;
+
         // Display Line
-        LineController currentLine = GameObject.Instantiate<LineController>(linePrefab, c.lineTransform);
+        LineController currentLine = GameObject.Instantiate<LineController>(prefab, c.lineTransform);
         currentLine.setText(_line);
         currentLine.setColor(c.color);
         currentLine.show();

@@ -33,9 +33,20 @@ public class LineController : MonoBehaviour
 
     void Update()
     {
-        Vector3 blinkerPosition = blinker.transform.localPosition;
-        blinkerPosition.y = -(baseLineOffset + ((float)text.textInfo.lineCount - 1) * lineHeight);
-        blinker.transform.localPosition = blinkerPosition;
+        if (text.horizontalAlignment == HorizontalAlignmentOptions.Center)
+        {
+            Vector3 blinkerPosition = blinker.transform.localPosition;
+            blinkerPosition.x = 0.0f;
+            blinkerPosition.y = -text.renderedHeight - 0.12f;
+            blinker.transform.localPosition = blinkerPosition;
+        }
+        else
+        {
+            Vector3 blinkerPosition = blinker.transform.localPosition;
+            blinkerPosition.y = -(baseLineOffset + ((float)text.textInfo.lineCount - 1) * lineHeight);
+            blinker.transform.localPosition = blinkerPosition;
+        }
+        
 
         switch(m_state)
         {
