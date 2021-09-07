@@ -23,7 +23,7 @@ EXTERNAL waitForSeconds(time)
 //-> Day2.AfterEncounter
 //-> Night2
 //-> Night2.EndOfNight
-//-> Day3
+-> Day3
 
 // Release start
 -> Day1
@@ -478,9 +478,41 @@ And I’m hungry now
 ~ waitForSeconds(1.5)
 ~ playAnimation("scene", "Scene_ToDay2")
 ~ waitForAnimationEnd("scene")
+
 -> Day3
 
 === Day3 ===
+~ setHorizontalPosition("plover", 2.5)
+~ playAnimation("plover", "Plover_Run")
+Humph…
+~ playAnimation("plover", "Plover_Run_Cry")
+So tired...
+This coast is endless
+~ playAnimation("plover", "Plover_Run_Surprise")
+Wait!
+~ playAnimation("plover", "Plover_Run")
+Am I even going in the right direction?
+I could have hitchhiked on Sophie’s back?
+~ playAnimation("plover", "Plover_Run_Sweaty")
+She would probably have eaten me though
+~ playAnimation("plover", "Plover_Run")
+~ clearAllLines()
+~ waitForSeconds(2.0)
+~ playAnimation("plover", "Plover_Run_Poop")
+~ waitForSeconds(0.8)
+~ playAnimation("plover", "Plover_Run_Surprise")
+~ waitForSeconds(0.4)
+~ playAnimation("plover", "Plover_Run_Look_Up")
+Wait! What the..! 
+Did a bird actually poop on me?!
+~ playAnimation("plover", "Plover_Run_Angry")
+Eww! Gross!!
+Imagine If the boys were to see me like this
+~ clearAllLines()
+~ playAnimation("plover", "Plover_Run")
+~ waitForSeconds(1.0)
+
+
 -> End
 
 
