@@ -510,7 +510,147 @@ Eww! Gross!!
 Imagine If the boys were to see me like this
 ~ clearAllLines()
 ~ playAnimation("plover", "Plover_Run")
+~ waitForSeconds(4.0)
+Hey Plover boy! #boys
+~ clearAllLines()
+~ playAnimation("plover", "Plover_Run_Surprise")
+~ playAnimationDelayed("plover", "Plover_Run", 0.4)
+
+The stress makes me hallucinate
+~ clearAllLines()
+~ waitForSeconds(4.0)
+
+Birdy bird! #boys
+~ clearAllLines()
+~ playAnimation("plover", "Plover_Run_Surprise")
+~ playAnimationDelayed("plover", "Plover_Run_Cry", 0.4)
+That’s it, I’m starting to lose it
+Am I dying?
+Is that you Dove? 
+Was I a good plover?
+~ clearAllLines()
+
+Over here you dinghy! #boys
+~ clearAllLines()
+~ playAnimation("plover", "Plover_Run_Surprise")
+~ playAnimationDelayed("plover", "Plover_Run_Look_Up", 0.6)
+HAAAA!
+~ playAnimation("plover", "Plover_Run_Surprise") 
+~ playAnimationDelayed("plover", "Plover_Run_Cry", 0.5)
+The boys!
+~ clearAllLines() 
+~ waitForSeconds(1.5)
+Nice feathers! #boys
+What product are you using #boys
+~ clearAllLines()
+~ playAnimation("plover", "Plover_Run_Angry")
+-Wait! Did YOU poop on me?!
+~ playAnimation("plover", "Plover_Run")
+I don’t see what you’re talking about #boys
+~ clearAllLines()
+~ waitForSeconds(2.0)
+~ playAnimation("plover", "Plover_Run_Look_Up")
+~ playAnimationDelayed("plover", "Plover_Run_", 0.1)
+Haven’t you sprained an ankle already? #boys
+You know everyone’s getting ready #boys
+Migration party is tonight #boys
+And DinghyDung will miss it! #boys
+Hahaha! #boys
+~ clearAllLines()
+~ playAnimation("plover", "Plover_Run_Surprise")
+~ playAnimationDelayed("plover", "Plover_Eye_Top_R", 0.6)
+Wait! How come you’re here then
+What? #boys
+~ clearAllLines()
+~ playAnimation("plover", "Plover_Eye_Bot_L")
+-Yhea, If i’m so far away
+How come you’re flying here
+~ playAnimation("plover", "Plover_Run_Surprise")
+~ playAnimationDelayed("plover", "Plover_Run_Fast_B", 0.6)
+I must be getting close actually
+~ clearAllLines()
+Wait! No! #boys
+You’re like, super far away #boys
+And you’re like completely off course #boys
+Yhea! #boys
+~ clearAllLines()
 ~ waitForSeconds(1.0)
+And hmmm. A Crow spotted you #boys
+Yhea, That’s how we found you #boys
+~ clearAllLines() 
+No way that’s the truth!
+~ playAnimation("plover", "Plover_Run_Happy")
+I actually made it!
+~ playAnimation("plover", "Plover_Run_Fast_A")
+That wasn’t too long actually
+~ clearAllLines() 	
+No! you’re completely off #boys
+Beside, #boys
+~ clearAllLines() 
+~ waitForSeconds(1.0) 
+Running was pretty pointless #boys
+You know she’s not gonna roll with you #boys
+~ clearAllLines() 
+~ waitForSeconds(1.0)
+Yhea! #boys
+You’re still little DinghyDung #boys
+~ clearAllLines()
+~ waitForSeconds(2.0)
+I know what you’re doing
+~ waitForSeconds(1.5)
+But I don’t care
+~ playAnimation("plover", "Plover_Run_Happy")
+~ playAnimationDelayed("plover", "Plover_Run", 0.3)
+What? #boys
+~ clearAllLines() 
+~ playAnimation("plover", "Plover_Eye_Bot_L")
+Running’s pretty rad!
+It clears your head, you know…
+~ playAnimation("plover", "Plover_Eye_Top_R")
+Guys I think he got a sunstroke #boys
+~ clearAllLines() 
+~ waitForSeconds(1.0)
+~ playAnimation("plover", "Plover_Eye_Bot_L")
+SShedding all the baby fluff
+Naw, Just a regular stroke #boys
+Dude, don’t joke about that #boys
+~ clearAllLines() 
+~ waitForSeconds(1.0)
+Rolling only with the essential
+~ clearAllLines()
+~ playAnimation("plover", "Plover_Eye_Bot_L")
+And the sky, the stars
+~ clearAllLines()
+~ waitForSeconds(1.0)
+~ playAnimation("plover", "Plover_Run_Happy")
+The birds and the breeze
+~ playAnimation("plover", "Plover_Eye_Bot_L")
+~ clearAllLines()
+~ waitForSeconds(1.0)
+~ playAnimationDelayed("plover", "Plover_Eye_Top_R", 1.5)
+I’m friend with a snake you know
+~ playAnimation("plover", "Plover_Run_Fast_A")
+Ok you’re right, he lost it #boys
+~ clearAllLines()
+I think i’m gonna run alone for a bit now
+~ clearAllLines()
+~ waitForSeconds(2.0)
+~ playAnimation("plover", "Plover_Run_Look_Up")
+~ playAnimationDelayed("plover", "Plover_Run_Fast_C", 1.5)
+Bye guys!
+Wait! #boys
+~ clearAllLines()
+~ waitForSeconds(2.0)
+Dang! He left #boys
+Don’t you think we should have told him? #boys
+Told him what? #boys
+~ clearAllLines()
+~ waitForSeconds(2.0)
+	That she was waiting for him? #boys
+~ clearAllLines()
+
+
+
 
 
 -> End
