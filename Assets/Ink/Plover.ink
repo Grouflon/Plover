@@ -23,7 +23,7 @@ EXTERNAL waitForSeconds(time)
 //-> Day2.AfterEncounter
 //-> Night2
 //-> Night2.EndOfNight
--> Day3
+//-> Day3
 
 // Release start
 -> Day1
