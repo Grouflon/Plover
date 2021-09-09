@@ -1,0 +1,10 @@
+- Background: Fixer le papillon dans la montagne
+- Retenue de l'anim surprise
+- Clean des sauts de ligne
+- "Wait is that cloud looking at me?" -> anim qui regarde en haut
+- Contraste du bousier
+- Surprise first night too short
+- Have/How many birds done what you're doing -> just how
+- Ne plus clearer les anim delayed quand on avance une ligne, mais uniquement quand on fait un nouveau PlayAnim par dessus
+- anim du caca qui tombe
+- anim de fin
