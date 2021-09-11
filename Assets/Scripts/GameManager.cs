@@ -141,6 +141,7 @@ public class GameManager : MonoBehaviour
     public ParallaxController parallaxController;
     public LineController linePrefab;
     public DayTimeController dayTimeController;
+    public GameObject dummyBlackout;
 
     void Start()
     {
@@ -205,6 +206,14 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+#if UNITY_WEBGL == false
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+            return;
+        }
+#endif
+
         for (int i = 0; i < m_delayedAnimations.Count;)
         {
             DelayedAnimation delayedAnimation = m_delayedAnimations[i];
@@ -251,6 +260,12 @@ public class GameManager : MonoBehaviour
     IEnumerator onAdvanceStory()
     {
         Assert.IsTrue(m_story.canContinue);
+
+        if (dummyBlackout != null)
+        {
+            yield return new WaitForEndOfFrame();
+            GameObject.Destroy(dummyBlackout);
+        }
 
         m_isWaitingForInteraction = false;
 
