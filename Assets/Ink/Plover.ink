@@ -120,7 +120,7 @@ If anything, <br/>I’m running “for” something
 ~ clearAllLines()
 Who you’re banging? #beetle
 ~ playAnimation("plover", "Plover_Run_Surprise")
-~ playAnimationDelayed("plover", "Plover_Run", 1.0)
+~ playAnimationDelayed("plover", "Plover_Run", 1.1)
 What? No it’s not…
 ~ clearAllLines()
 What’s her name? #beetle
@@ -167,7 +167,7 @@ Wait…
 ~ autoPassLine(0.4)
 Is that actual dung you’re pushi…
 
-Then #beetle
+Then… #beetle
 ~ clearAllLines()
 ~ playAnimation("plover", "Plover_Run")
 When you sorted all that shit and kept it together for a while #beetle
@@ -200,7 +200,7 @@ What an insightful creature
 = EndOfDay
 ~ setHorizontalPosition("plover", 2.5)
 ~ playAnimation("plover", "Plover_Run_Surprise")
-~ playAnimationDelayed("plover", "Plover_Run", 1.0)
+~ playAnimationDelayed("plover", "Plover_Run", 1.1)
 Wait?…
 ~ waitForSeconds(1.2)
 ~ clearAllLines()
@@ -229,7 +229,7 @@ Soothing crickets melody…
 ~ autoPassLine(1.0)
 Thanks pal! #crickets
 ~ playAnimation("plover", "Plover_Idle_Surprise")
-~ playAnimationDelayed("plover", "Plover_Idle_Short", 1.1)
+~ playAnimationDelayed("plover", "Plover_Idle_Short", 1.0)
 What?!
 ~ clearAllLines()
 ~ playAnimation("plover", "Plover_Idle_Stargazing")
@@ -258,17 +258,11 @@ I wish she was by my side
 === Day2 ===
 ~ setHorizontalPosition("plover", 2.5)
 ~ playAnimation("plover", "Plover_Run")
-Here we go again
-Second day, out of…
-~ clearAllLines()
-~ waitForSeconds(1.5)
-~ playAnimation("plover", "Plover_Eye_Top_R")
-Oh dang…
-Why am I doing this again?
-~ clearAllLines()
-~ waitForSeconds(3.0)
-~ playAnimation("plover", "Plover_Run")
-I’m sooo tired! I had the strangest dream
+~ waitForSeconds(1.0)
+I’m sooo tired!
+~ waitForSeconds(2.0)
+I had the strangest dream
+~ waitForSeconds(2.8)
 ~ playAnimation("plover", "Plover_Eye_Bot_L")
 I was just a little plover<br/>straight out of the nest
 ~ playAnimation("plover", "Plover_Eye_Top_R")
@@ -278,13 +272,13 @@ Except…
 I…
 was wearing…
 ~ playAnimation("plover", "Plover_Run_Surprise")
-~ playAnimationDelayed("plover", "Plover_Run", 1.0)
+~ playAnimationDelayed("plover", "Plover_Run", 1.1)
 PANTS!!
 ~ playAnimation("plover", "Plover_Run_Cry")
 They were all laughing…
 I tried to run away<br/>but I tripped over
 ~ playAnimation("plover", "Plover_Run_Surprise")
-~ playAnimationDelayed("plover", "Plover_Run_Sweaty", 1.0)
+~ playAnimationDelayed("plover", "Plover_Run_Sweaty", 1.1)
 Because I also had SHOES!
 Oh boy… What a night…
 ~ playAnimation("plover", "Plover_Run")
@@ -302,9 +296,9 @@ SSssssS #snake
 SSssssSSSssss #snake
 ~ waitForSeconds(2.0)
 ~ playAnimation("plover", "Plover_Run_Surprise")
-~ playAnimationDelayed("plover", "Plover_Run_Sweaty", 1.0)
+~ playAnimationDelayed("plover", "Plover_Run_Sweaty", 1.1)
 HAAAA! What the…
-SSorry… Didn’t mean to SStartle you. #snake
+SSorry…<br/>Didn’t mean to SStartle you. #snake
 ~ clearAllLines()
 I thought I was chased by a cucumber
 ~ playAnimation("plover", "Plover_Run")
@@ -313,7 +307,7 @@ That’Ss not nice… #snake
 I’m SSophie #snake
 Nice SSneakers by the way #snake
 ~ playAnimation("plover", "Plover_Run_Surprise")
-~ playAnimationDelayed("plover", "Plover_Run_Sweaty", 1.0)
+~ playAnimationDelayed("plover", "Plover_Run_Sweaty", 1.1)
 -HAAAAA!
 ~ clearAllLines()
 Why would you say<br/>something like that?
@@ -321,7 +315,7 @@ Why would you say<br/>something like that?
 What’SS wrong? It’s because you’re SSuper Fast #snake
 ~ clearAllLines()
 I thought you had like… #snake
-Turbo running SShoes or SSomething #snake
+Turbo running SShoes<br/>or SSomething #snake
 ~ clearAllLines()
 Oh, Thanks
 ~ playAnimation("plover", "Plover_Run_Happy")
@@ -347,7 +341,7 @@ How can I apologize?
 I could eat you maybe? #snake
 ~ clearAllLines()
 ~ playAnimation("plover", "Plover_Run_Surprise")
-~ playAnimationDelayed("plover", "Plover_Run_Sweaty", 1.0)
+~ playAnimationDelayed("plover", "Plover_Run_Sweaty", 1.1)
 What?!!
 Don’t worry, I already ate this month #snake
 ~ clearAllLines()
@@ -417,7 +411,7 @@ I’m so pumped up
 I SShould have SStoped earlier #snake
 I’m starting to get hungry #snake
 ~ playAnimation("plover", "Plover_Run_Surprise")
-~ playAnimationDelayed("plover", "Plover_Run_Sweaty", 1.0)
+~ playAnimationDelayed("plover", "Plover_Run_Sweaty", 1.1)
 ~ clearAllLines()
 HAAAA!
 ~ playAnimation("scene", "Scene_Snake_Exit")
@@ -467,7 +461,7 @@ Wait!
 How could she be<br/>like running…
 …but without feet
 ~ playAnimation("plover", "Plover_Idle_Surprise")
-~ playAnimationDelayed("plover", "Plover_Idle_Short", 0.4)
+~ playAnimationDelayed("plover", "Plover_Idle_Short", 1.0)
 Wait!
 I think they do<br/>have feet actually
 Like thousand super tiny ones
@@ -521,7 +515,7 @@ She would probably<br/>have eaten me though
 ~ waitForAnimationEnd("scene")
 ~ waitForSeconds(1.1)
 ~ playAnimation("plover", "Plover_Run_Surprise")
-~ waitForSeconds(0.4)
+~ waitForSeconds(1.1)
 ~ playAnimation("plover", "Plover_Run_Look_Up")
 Wait! What the…!
 Did a bird<br/>actually poop on me?!
@@ -538,7 +532,7 @@ Hey Plover boy! #boys1
 ~ clearAllLines()
 ~ waitForSeconds(0.5)
 ~ playAnimation("plover", "Plover_Run_Surprise")
-~ playAnimationDelayed("plover", "Plover_Run", 0.4)
+~ playAnimationDelayed("plover", "Plover_Run", 1.1)
 Did I just…
 Am I hearing voices?
 ~ clearAllLines()
@@ -548,7 +542,7 @@ Birdy bird! #boys1
 ~ clearAllLines()
 ~ waitForSeconds(0.5)
 ~ playAnimation("plover", "Plover_Run_Surprise")
-~ playAnimationDelayed("plover", "Plover_Run_Cry", 0.8)
+~ playAnimationDelayed("plover", "Plover_Run_Cry", 1.1)
 That’s it, I’m starting to lose it
 Am I dying?
 Is that you Dove?
@@ -558,10 +552,10 @@ Was I a good plover?
 Over here you dinghy! #boys1
 ~ clearAllLines()
 ~ playAnimation("plover", "Plover_Run_Surprise")
-~ playAnimationDelayed("plover", "Plover_Run_Look_Up", 0.6)
+~ playAnimationDelayed("plover", "Plover_Run_Look_Up", 1.1)
 HAAAA!
 ~ playAnimation("plover", "Plover_Run_Surprise")
-~ playAnimationDelayed("plover", "Plover_Run", 0.8)
+~ playAnimationDelayed("plover", "Plover_Run", 1.1)
 The boys!
 ~ clearAllLines()
 ~ waitForSeconds(1.7)
@@ -589,7 +583,7 @@ And DinghyDung will miss it! #boys2
 Hahaha! #boys3
 ~ clearAllLines()
 ~ playAnimation("plover", "Plover_Run_Surprise")
-~ playAnimationDelayed("plover", "Plover_Eye_Top_R", 0.6)
+~ playAnimationDelayed("plover", "Plover_Eye_Top_R", 1.1)
 Wait!<br/>How come you’re here then
 ~ clearAllLines()
 ~ waitForSeconds(1.5)
@@ -603,7 +597,7 @@ Yeah, If i’m so far away
 How come you’re flying here…
 ~ waitForSeconds(2.0)
 ~ playAnimation("plover", "Plover_Run_Surprise")
-~ playAnimationDelayed("plover", "Plover_Run", 0.8)
+~ playAnimationDelayed("plover", "Plover_Run", 1.1)
 I must be getting close actually
 ~ clearAllLines()
 ~ playAnimation("plover", "Plover_Run_Fast_B")
