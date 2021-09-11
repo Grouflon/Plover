@@ -268,12 +268,12 @@ public class GameManager : MonoBehaviour
         }
 
         // Apply all pending delayed animations
-        for (int i = 0; i < m_delayedAnimations.Count; ++i)
+        /*for (int i = 0; i < m_delayedAnimations.Count; ++i)
         {
             DelayedAnimation delayedAnimation = m_delayedAnimations[i];
             delayedAnimation.target.playAnimation(delayedAnimation.animationName);
         }
-        m_delayedAnimations.Clear();
+        m_delayedAnimations.Clear();*/
 
         // Consume clearAllLinesEvents first
         for (int i = 0; i < m_eventsPile.Count;)
@@ -320,14 +320,26 @@ public class GameManager : MonoBehaviour
                 case InkEventType.playAnimation:
                 {
                     PlayAnimation_InkEvent evt = (PlayAnimation_InkEvent)e;
-                    if (evt.delay == 0.0f)
-                    {
-                        evt.target.playAnimation(evt.animationName);
-                    }
-                    else
-                    {
-                        pushDelayedAnimation(evt.target, evt.animationName, evt.delay);
-                    }
+                        if (evt.delay == 0.0f)
+                        {
+                            evt.target.playAnimation(evt.animationName);
+
+                            // Clear delayed animations still pending
+                            for (int i = 0; i < m_delayedAnimations.Count;)
+                            {
+                                if (evt.target != m_delayedAnimations[i].target)
+                                {
+                                    ++i;
+                                    continue;
+                                }
+
+                                m_delayedAnimations.RemoveAt(i);
+                            }
+                        }
+                        else
+                        {
+                            pushDelayedAnimation(evt.target, evt.animationName, evt.delay);
+                        }
                 }
                 break;
 

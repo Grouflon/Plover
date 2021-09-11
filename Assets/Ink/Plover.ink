@@ -59,16 +59,18 @@ It’s not like they’d leave boys along the way to check on me
 
 ~ playAnimation("plover", "Plover_Run_Love")
 I’ll always remember her feathers shimmering…
-The morning dew, like a million diamonds…
+The morning dew, like<br/>a million diamonds…
 ~ playAnimation("plover", "Plover_Run_Surprise")
-~ playAnimationDelayed("plover", "Plover_Run", 1.0)
+~ playAnimationDelayed("plover", "Plover_Run", 1.1)
 Wait!<br/>Does she even know my name?
+~ playAnimation("plover", "Plover_Run_Anxious")
 Oh boy….
+~ playAnimation("plover", "Plover_Run")
 ~ waitForSeconds(4.0)
 
 Ok that’s it, I'm bored
 ~ waitForSeconds(2.0)
-
+~ playAnimation("plover", "Plover_Run_Look_Up")
 Wait.<br/>Is that cloud looking at me?
 I swear it is!<br/>I’m sure it’s the boys
 ~ playAnimation("plover", "Plover_Run_Fast_B")
@@ -106,7 +108,7 @@ You know running away is not a solution to anything right? #beetle
 ~ clearAllLines()
 ~ playAnimation("plover", "Plover_Run")
 Unless there’s a fire I guess #beetle
-Or like, #beetle
+Or like… #beetle
 There’s a meteor or some giant tower falling #beetle
 You know… #beetle
 
@@ -136,7 +138,7 @@ All the other plovers have smooth silky feathers
 All the boys are builts like friggin frigates
 ~ playAnimation("plover", "Plover_Run_Cry")
 I’m like a deflating dinghy
-~ playAnimation("plover", "Plover_Run_Angry")
+~ playAnimation("plover", "Plover_Run_Deter")
 But I’ll prove them all I’m good at something
 ~ playAnimation("plover", "Plover_Run")
 I’m no good flyer but I can run!
@@ -161,14 +163,14 @@ I makes you stronger you know #beetle
 
 ~ clearAllLines()
 ~ playAnimation("plover", "Plover_Eye_Top_R")
--Wait…
+Wait…
 ~ autoPassLine(0.4)
-is that actual dung you’re pushi…
+Is that actual dung you’re pushi…
 
-Then, #beetle
+Then #beetle
 ~ clearAllLines()
 ~ playAnimation("plover", "Plover_Run")
-when you sorted all that shit and kept it together for a while #beetle
+When you sorted all that shit and kept it together for a while #beetle
 That becomes an asset<br/>you know! #beetle
 If shit ain’t worth shit,<br/>why pushing through #beetle
 Why keep going? #beetle
@@ -185,7 +187,9 @@ When you see her,<br/>you gotta tell her… #beetle
 
 ~ clearAllLines()
 ~ waitForSeconds(1.0)
--Tell her what?<br/>Damn, he’s too far
+~ playAnimation("plover", "Plover_Run_Anxious")
+Tell her what?<br/>Damn, he’s too far
+~ playAnimation("plover", "Plover_Run")
 I can’t slow down,<br/>I will lose my pace
 ~ playAnimation("plover", "Plover_Eye_Top_R")
 ~ waitForSeconds(1.5)
@@ -222,11 +226,12 @@ Soothing crickets melody…
 ~ clearAllLines()
 ~ waitForSeconds(2.0)
 ~ playAnimation("plover", "Plover_Idle_Short")
+~ autoPassLine(1.0)
 Thanks pal! #crickets
-~ clearAllLines()
 ~ playAnimation("plover", "Plover_Idle_Surprise")
-~ playAnimationDelayed("plover", "Plover_Idle_Short", 0.6)
+~ playAnimationDelayed("plover", "Plover_Idle_Short", 1.1)
 What?!
+~ clearAllLines()
 ~ playAnimation("plover", "Plover_Idle_Stargazing")
 Glimmering stars…
 ~ playAnimation("plover", "Plover_Idle_Long")
@@ -359,7 +364,7 @@ Bozo #snake
 You can be sure<br/>I'll remember that!
 ~ clearAllLines()
 SSo, Where are you going in such a hurry? #snake
-~ playAnimation("plover", "Plover_Run_Angry")
+~ playAnimation("plover", "Plover_Run_Deter")
 Out to face my DESTINY!
 ~ clearAllLines()
 OoooK… That’s the SSpirit…<br/>I guess #snake
@@ -390,9 +395,9 @@ HuSSh! #snake
 That’s a figure of SSpeech #snake
 You gotta do what<br/>you’re doing for yourself #snake
 Not to Impresss<br/>Nor to SSeduce #snake
-Have many birds done<br/>what you’re doing? #snake
+How many birds have done<br/>what you’re doing? #snake
 ~ playAnimation("plover", "Plover_Eye_Top_R")
-I don’t think so
+None I think
 ~ clearAllLines()
 Exactly! SSo don’t Ssay<br/>that’s SStupid #snake
 ~ playAnimation("plover", "Plover_Run")
@@ -416,7 +421,7 @@ I’m starting to get hungry #snake
 ~ clearAllLines()
 HAAAA!
 ~ playAnimation("scene", "Scene_Snake_Exit")
-You’d be full of lactic acid anyway #snake
+You’d be full of<br/>lactic acid anyway #snake
 ~ clearAllLines()
 GodSSpeed! #snake
 Bozo #snake
@@ -514,7 +519,7 @@ She would probably<br/>have eaten me though
 ~ waitForSeconds(2.0)
 ~ playAnimation("scene", "Scene_Poop_Fall")
 ~ waitForAnimationEnd("scene")
-~ waitForSeconds(0.8)
+~ waitForSeconds(1.1)
 ~ playAnimation("plover", "Plover_Run_Surprise")
 ~ waitForSeconds(0.4)
 ~ playAnimation("plover", "Plover_Run_Look_Up")
@@ -522,10 +527,10 @@ Wait! What the…!
 Did a bird<br/>actually poop on me?!
 ~ playAnimation("plover", "Plover_Run_Cry")
 Eww! Gross!!
-Imagine If the boys were to see me like this
+Imagine if the boys were to see me like this
 ~ clearAllLines()
 ~ waitForSeconds(2.0)
-
+->BoysEncounter
 = BoysEncounter
 ~ setHorizontalPosition("plover", 2.5)
 ~ playAnimation("plover", "Plover_Run")
@@ -590,7 +595,7 @@ Wait!<br/>How come you’re here then
 ~ waitForSeconds(1.5)
 What? #boys1
 ~ clearAllLines()
-
+->Confidence
 = Confidence
 ~ setHorizontalPosition("plover", 2.5)
 ~ playAnimation("plover", "Plover_Eye_Bot_L")
@@ -632,6 +637,7 @@ You’re still little DinghyDung #boys1
 ~ waitForSeconds(2.5)
 I know what you’re doing
 ~ waitForSeconds(2.0)
+->DontCare
 = DontCare
 ~ setHorizontalPosition("plover", 1.4)
 ~ setParallaxSpeed(8.5)
