@@ -355,7 +355,7 @@ You can promise me<br/>one thing though #snake
 Next time you meet SSomeone for the first time #snake
 Don’t be a jerk! #snake
 Bozo #snake
-
+~ clearAllLines()
 
 ~ playAnimation("plover", "Plover_Eye_Bot_L")
 You can be sure<br/>I'll remember that!
@@ -636,6 +636,8 @@ I know what you’re doing
 ~ waitForSeconds(2.0)
 ->DontCare
 = DontCare
+~ fadeAudio("day", 1.0, 0.0)
+~ fadeAudio("footsteps", 1.0, 0.0)
 ~ setHorizontalPosition("plover", 1.4)
 ~ setParallaxSpeed(8.5)
 ~ playAnimation("plover", "Plover_Run_Happy")
@@ -690,9 +692,11 @@ Dang! He left #boys2
 ~ clearAllLines()
 ~ waitForSeconds(2.0)
 Don’t you think<br/>we should have told him? #boys1
-Told him what? #boys2
 ~ clearAllLines()
 ~ waitForSeconds(2.0)
+Told him what? #boys2
+~ clearAllLines()
+~ waitForSeconds(3.0)
 That she was waiting for him? #boys1
 ~ clearAllLines()
 ~ waitForSeconds(3.0)
