@@ -14,6 +14,7 @@ public enum InkEventType
     clearAllLines,
     waitForAnimationEnd,
     waitForSeconds,
+    fadeAudio,
 }
 
 public class InkEvent
@@ -113,6 +114,19 @@ public class WaitForSeconds_InkEvent : InkEvent
     public float time;
 }
 
+public class FadeAudio_InkEvent : InkEvent
+{
+    public FadeAudio_InkEvent(string _name, float _target, float _time) : base(InkEventType.fadeAudio)
+    {
+        name = _name;
+        target = _target;
+        time = _time;
+    }
+    public string name;
+    public float target;
+    public float time;
+}
+
 public struct DelayedAnimation
 {
     public AnimationController target;
@@ -142,6 +156,9 @@ public class GameManager : MonoBehaviour
     public LineController linePrefab;
     public DayTimeController dayTimeController;
     public GameObject dummyBlackout;
+    public AudioController dayBGM;
+    public AudioController nightBGM;
+    public AudioController footstepsBGM;
 
     void Start()
     {
@@ -199,6 +216,11 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log(string.Format("Ink: waitForSeconds({0})", _time));
             pushInkEvent(new WaitForSeconds_InkEvent(_time));
+        });
+        m_story.BindExternalFunction("fadeAudio", (string _name, float _target, float _time) =>
+        {
+            Debug.Log(string.Format("Ink: fadeAudio({0}, {1}, {2})", _name, _target, _time));
+            pushInkEvent(new FadeAudio_InkEvent(_name, _target, _time));
         });
 
         StartCoroutine(onAdvanceStory());
@@ -394,6 +416,13 @@ public class GameManager : MonoBehaviour
                     yield return new WaitForSeconds(evt.time);
                 }
                 break;
+
+                case InkEventType.fadeAudio:
+                {
+                    FadeAudio_InkEvent evt = (FadeAudio_InkEvent)e;
+                    fadeSound(evt.name, evt.target, evt.time);
+                }
+                break;
             }
         }
 
@@ -462,6 +491,30 @@ public class GameManager : MonoBehaviour
     {
         Assert.IsTrue(m_characters.ContainsKey(_targetName));
         return m_characters[_targetName];
+    }
+
+    public void fadeSound(string _name, float _target, float _time)
+    {
+        switch(_name)
+        {
+            case "day":
+            {
+                dayBGM.fadeAudio(_target, _time);
+            }
+            break;
+
+            case "night":
+            {
+                nightBGM.fadeAudio(_target, _time);
+            }
+            break;
+
+            case "footsteps":
+            {
+                footstepsBGM.fadeAudio(_target, _time);
+            }
+            break;
+        }
     }
 
     Story m_story;

@@ -7,6 +7,7 @@ EXTERNAL clearAllLines()
 EXTERNAL autoPassLine(delay)
 EXTERNAL waitForAnimationEnd(target)
 EXTERNAL waitForSeconds(time)
+EXTERNAL fadeAudio(name, target, time)
 
 // Default state
 ~ setDayTime("day")
@@ -201,6 +202,8 @@ What an insightful creature
 ~ setHorizontalPosition("plover", 2.5)
 ~ playAnimation("plover", "Plover_Run_Surprise")
 ~ playAnimationDelayed("plover", "Plover_Run", 1.1)
+~ fadeAudio("day", 1.0, 0.0)
+~ fadeAudio("footsteps", 1.0, 0.0)
 Wait?…
 ~ waitForSeconds(1.2)
 ~ clearAllLines()
