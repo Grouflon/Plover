@@ -82,6 +82,8 @@ I knew they<br/>wouldn’t take my word!
 -> Day1.BeetleEncounter
 
 = BeetleEncounter
+~ fadeAudio("day", 1.0, 0.0)
+~ fadeAudio("footsteps", 1.0, 0.0)
 ~ setParallaxSpeed(7)
 ~ setHorizontalPosition("plover", 2.5)
 ~ playAnimation("plover", "Plover_Run_Fast_B")
